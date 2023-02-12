@@ -1,12 +1,14 @@
 # OpenInv - Inventory Management System
 
+## <span style="color:red"><strong>Very early state, work in progress.</strong></span>
+
 A Django based web service that allows users to build an inventory.
 
 ## Features
 - User authentication and authorization
-- Inventory item management (create, read, update, delete)
+- Inventory item management (~~create~~, read, ~~update, delete~~)
 - Search and filter inventory items
-- Generate reports on inventory status
+- ~~Generate reports on inventory status~~
 ## Prerequisites
 - Python 3.x
 - Django 3.x
