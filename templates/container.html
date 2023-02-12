@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Container{% endblock %}
+
+{% block content %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Type</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for container in containers %}
+      <tr>
+        <th scope="row">{{ container.id }}</th>
+        <td>{{ container.type }}</td>
+        <td>{{ container.location }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

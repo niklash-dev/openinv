@@ -1,0 +1,40 @@
+<!-- inventory.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Inventory{% endblock %}
+
+{% block content %}
+  <!-- Add your inventory content here -->
+  <nav class="navbar navbar-light">
+    <div>
+      <br>
+    <form class="form-inline" method="get">
+      {% csrf_token %}
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query"{% if search != "" %} value="{{ search }}"{% endif %}>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <br>
+    <button type="button" class="btn btn-primary">Items <span class="badge">{{total_items}}</span></button>
+    <br><br>
+  </div>
+  </nav>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Container</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in items %}
+      <tr>
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.container_id }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
