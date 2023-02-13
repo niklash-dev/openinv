@@ -14,7 +14,8 @@ A Django based web service that allows users to build an inventory.
 - Django 3.x
 - Virtual environment (optional but recommended)
 ## Installation
-1. Clone the repository: git clone https://github.com/<your-username>/inventory-management-system.git
+1. Clone the repository: 
+git clone https://github.com/<your-username>/inventory-management-system.git
 2. Create a virtual environment and activate it:
     ```bash
     python3 -m venv env
