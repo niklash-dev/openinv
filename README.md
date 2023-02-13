@@ -45,7 +45,5 @@ This project is open for contributions. If you'd like to contribute, please foll
 3. Commit your changes
 4. Push to your branch
 5. Submit a pull request
-6. License
-
 
 This project is licensed under the GNU GPLv3 License. See LICENSE for details.
