@@ -16,7 +16,7 @@ A Django based web service that allows users to build an inventory.
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/<your-username>/inventory-management-system.git
+    git clone https://github.com/niklash-dev/openinv.git
     ```
 2. Create a virtual environment and activate it:
     ```bash
